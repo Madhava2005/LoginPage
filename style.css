@@ -1,63 +1,88 @@
-.social-login {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.social-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.7rem;
-  padding: 0.7rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  width: 100%;  /* Make buttons consistent in width */
-}
-
-.social-btn img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain; /* Prevents distortion */
-}
-
-.social-btn span {
-  display: inline-block;
-}
-
-.social-btn.google {
-  background: #fff;
-  color: #222;
-}
-
-.social-btn.google:hover {
-  background: #f1f3f4;
-}
-
-.social-btn.facebook {
-  background: #1877f2;
-  color: #fff;
-}
-
-.social-btn.facebook:hover {
-  background: #145db2;
-}
-
-.social-btn.github {
-  background: #222;
-  color: #fff;
-}
-
-.social-btn.github:hover {
-  background: #444;
-}
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #cfe2f3; 
+  margin: 0;
   min-height: 100vh;
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px #007BFF;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: #a0c8ff;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
 }
