@@ -1,0 +1,63 @@
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 0.7rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;  /* Make buttons consistent in width */
+}
+
+.social-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain; /* Prevents distortion */
+}
+
+.social-btn span {
+  display: inline-block;
+}
+
+.social-btn.google {
+  background: #fff;
+  color: #222;
+}
+
+.social-btn.google:hover {
+  background: #f1f3f4;
+}
+
+.social-btn.facebook {
+  background: #1877f2;
+  color: #fff;
+}
+
+.social-btn.facebook:hover {
+  background: #145db2;
+}
+
+.social-btn.github {
+  background: #222;
+  color: #fff;
+}
+
+.social-btn.github:hover {
+  background: #444;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
